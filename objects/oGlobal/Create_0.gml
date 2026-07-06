@@ -68,3 +68,4 @@ global.algae = 0
 global.fish_number = 0
 global.gamefont = font_add_sprite_ext(fGamefont, "0123456789-+/. AOF", true, 1)
 global.adult_fish_scale = 1.5 // Determines age and base scale for adult fish
+global.fish_list = []

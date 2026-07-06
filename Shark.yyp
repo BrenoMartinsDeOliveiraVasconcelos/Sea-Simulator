@@ -29,7 +29,6 @@
   "resources":[
     {"id":{"name":"oAlgae","path":"objects/oAlgae/oAlgae.yy",},},
     {"id":{"name":"oBuble","path":"objects/oBuble/oBuble.yy",},},
-    {"id":{"name":"oBublemaker","path":"objects/oBublemaker/oBublemaker.yy",},},
     {"id":{"name":"oDebug","path":"objects/oDebug/oDebug.yy",},},
     {"id":{"name":"oFish","path":"objects/oFish/oFish.yy",},},
     {"id":{"name":"oFloor","path":"objects/oFloor/oFloor.yy",},},

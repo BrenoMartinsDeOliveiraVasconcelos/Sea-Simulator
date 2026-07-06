@@ -5,6 +5,9 @@ enum FishMode {
     EATING
 }
 
+// Register fish on the global fish list
+array_insert(global.fish_list, array_length(global.fish_list), self)
+
 mode = FishMode.SWIMMING;
 
 spd = 1;                // movement speed
@@ -21,19 +24,19 @@ hp = 100
 max_hp = 100
 max_hunger = 100
 
-oxigen_draw_timeout = 30
+oxigen_draw_timeout = 60
 oxigen_frame = 0
 eat_timeout = 30
 eat_frame = 0
 is_timeouted = false
 has_grown = true
 age = 0
-age_zero_alpha = 0.3
+age_zero_alpha = 0.5
 
 target = noone
 
 // Base values for vary
-base_oxygen_draw = 1000
+base_oxygen_draw = 1
 base_hunger_decay = 60
 base_age_zero_scale = 0.5
 base_age_limit = 3

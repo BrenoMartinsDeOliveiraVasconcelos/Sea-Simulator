@@ -1,6 +1,7 @@
 hunger_frame += 1
 hunger_decay_frame += 1
 eat_frame += 1
+oxigen_frame += 1
 
 if (mode == FishMode.SWIMMING) {
     dir_change_timer--;

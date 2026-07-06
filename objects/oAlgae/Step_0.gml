@@ -6,14 +6,17 @@ growt_rate = base_growt_rate + (size*10)
 
 if (current_oxigenation_frame >= passive_oxigen_rate){
 	current_oxigenation_frame = 0
-	global.total_oxigen += passive_oxigen_emission
+	if (is_top){
+		global.total_oxigen += passive_oxigen_emission
+	}else{
+		global.total_oxigen += passive_oxigen_emission * 0.1
+	}
 }
 
 if (chance_gen(ramification_chance)){
 	has_grown = false
 	ramification_chance -= 100
 }
-
 
 if (current_frame >= growt_rate and not has_grown and y < room_height){
 	current_frame = 0
@@ -35,11 +38,6 @@ if (current_frame >= growt_rate and not has_grown and y < room_height){
 	algae.size = size + 1
 	frames_per_bubble *= 1.5
 	is_top = false
-	
-	if (is_top){
-		global.total_oxigen += 1
-	}
-	
 }
 
 
@@ -52,6 +50,7 @@ if (current_bubble_frame >= frames_per_bubble){
 	bubble = instance_create_layer(x, y, "Effects", oBuble)
 	bubble.duration = irandom_range(life_range_min, life_range_max)
 	bubble.image_index = irandom_range(0, bubble.image_number-1)
+	bubble.image_alpha = 0.5
 }
 
 
