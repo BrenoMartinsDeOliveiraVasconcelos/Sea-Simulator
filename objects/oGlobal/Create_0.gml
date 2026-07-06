@@ -8,7 +8,7 @@ LUMNA_W = room_width
 LUMNA_H =  12
 
 NUMBER_INSTS_H = room_height/LUMNA_H
-BASE_ALPHA = 0.2
+BASE_ALPHA = 0.1
 ALPHA_DECREASE_FACTOR = BASE_ALPHA / NUMBER_INSTS_H
 
 var x_place = 0
@@ -56,7 +56,7 @@ for (var level= 0; level<floor_levels; level+=1){
 	}
 }
 
-fish_start_population = 10
+fish_start_population = 50
 
 fish_spawn_timer = 60
 current_fish_frame = 0

@@ -1,6 +1,6 @@
 encubator_object  = oRock
-base_growt_rate = 120
-growt_rate = 120
+base_growt_rate = 60
+growt_rate = 60
 current_frame = 0
 has_grown = false
 ramification_chance = 500

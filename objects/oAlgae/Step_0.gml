@@ -2,7 +2,7 @@ current_frame += 1
 current_bubble_frame += 1
 current_oxigenation_frame += 1
 
-growt_rate = base_growt_rate + (size*20)
+growt_rate = base_growt_rate + (size*10)
 
 if (current_oxigenation_frame >= passive_oxigen_rate){
 	current_oxigenation_frame = 0
