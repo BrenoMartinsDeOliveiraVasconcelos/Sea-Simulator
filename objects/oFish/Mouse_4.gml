@@ -1,0 +1,2 @@
+show_debug_message($"Oxigen Draw Rate: {oxigen_draw_rate} | Hunger Decay Rate: {hunger_decay_rate} | Age Zero Scale: {age_zero_scale} | Age Limit: {age_limit} | Gender: {gender}");
+show_debug_message($"Hunger: {hunger} | HP: {hp} | Age: {age} | Scale: {image_xscale}x{image_yscale}");
